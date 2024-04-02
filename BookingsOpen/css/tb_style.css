@@ -1,0 +1,128 @@
+﻿@charset "UTF-8";
+
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.toyotabanner *, .toyotabanner *:after, .toyotabanner *:before {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+.toyotabanner-anim *, .toyotabanner-anim, .toyotabanner-anim:before, .toyotabanner-anim:after {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.toyotabanner img {
+    width: 100%;
+}
+.toyotabanner-posrel {
+    position: relative;
+}
+
+.toyotabanner-section {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.toyotabanner-section:before, .toyotabanner-section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.toyotabanner-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.toyotabanner-wrapper a {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.toyotabanner-half-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease .5s normal forwards 1;
+    -moz-animation: fadin 1s ease .5s normal forwards 1;
+    -o-animation: fadin 1s ease .5s normal forwards 1;
+    -ms-animation: fadin 1s ease .5s normal forwards 1;
+    animation: fadin 1s ease .5s normal forwards 1;
+}
+.toyotabanner-one-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 1s normal forwards 1;
+    -moz-animation: fadin 1s ease 1s normal forwards 1;
+    -o-animation: fadin 1s ease 1s normal forwards 1;
+    -ms-animation: fadin 1s ease 1s normal forwards 1;
+    animation: fadin 1s ease 1s normal forwards 1;
+}
+.toyotabanner-oneandhalf-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 1.5s normal forwards 1;
+    -moz-animation: fadin 1s ease 1.5s normal forwards 1;
+    -o-animation: fadin 1s ease 1.5s normal forwards 1;
+    -ms-animation: fadin 1s ease 1.5s normal forwards 1;
+    animation: fadin 1s ease 1.5s normal forwards 1;
+}
+.toyotabanner-two-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 2s normal forwards 1;
+    -moz-animation: fadin 1s ease 2s normal forwards 1;
+    -o-animation: fadin 1s ease 2s normal forwards 1;
+    -ms-animation: fadin 1s ease 2s normal forwards 1;
+    animation: fadin 1s ease 2s normal forwards 1;
+}
+.toyotabanner-twoandhalf-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 2.5s normal forwards 1;
+    -moz-animation: fadin 1s ease 2.5s normal forwards 1;
+    -o-animation: fadin 1s ease 2.5s normal forwards 1;
+    -ms-animation: fadin 1s ease 2.5s normal forwards 1;
+    animation: fadin 1s ease 2.5s normal forwards 1;
+}
+.toyotabanner-three-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 3s normal forwards 1;
+    -moz-animation: fadin 1s ease 3s normal forwards 1;
+    -o-animation: fadin 1s ease 3s normal forwards 1;
+    -ms-animation: fadin 1s ease 3s normal forwards 1;
+    animation: fadin 1s ease 3s normal forwards 1;
+}
+.toyotabanner-four-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 4s normal forwards 1;
+    -moz-animation: fadin 1s ease 4s normal forwards 1;
+    -o-animation: fadin 1s ease 4s normal forwards 1;
+    -ms-animation: fadin 1s ease 4s normal forwards 1;
+    animation: fadin 1s ease 4s normal forwards 1;
+}
+.toyotabanner-five-sec {
+    opacity: 0;
+    -webkit-animation: fadin 1s ease 5s normal forwards 1;
+    -moz-animation: fadin 1s ease 5s normal forwards 1;
+    -o-animation: fadin 1s ease 5s normal forwards 1;
+    -ms-animation: fadin 1s ease 5s normal forwards 1;
+    animation: fadin 1s ease 5s normal forwards 1;
+}
+@keyframes fadin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
