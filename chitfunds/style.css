@@ -1,0 +1,1122 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.header
+{
+   position:relative;
+   width:100%;
+   background-color:#fff;
+   padding-bottom:30px;
+}
+
+.logo
+{
+    padding-left:30px;
+    padding-top:30px;
+    width:20%;
+    margin:0 -2px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.banner
+{
+    padding-top:100px;
+}
+
+.nav-list
+{
+    display:inline-block;
+    text-align: right;
+    width:80%;
+    margin:0 -2px;
+    vertical-align: middle;
+}
+
+.nav-bar
+{
+    display:inline-block;
+    list-style-type:none;
+}
+
+.nav-bar ul
+{
+    width:100%;
+    color:#10c9c3;
+    
+    
+}
+
+.nav-bar ul li
+{
+    display:inline-block;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    
+    
+}
+
+.nav-bar ul li a
+{
+    text-decoration:none;
+    color:#000;
+}
+
+.nav-bar ul li a:hover
+{
+    color:#fff;
+    background:rgba(65, 68, 180, 0.56);
+    border-radius:4px;    
+}
+
+.nav-bar li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 4px #fa1c0a;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-bar li:hover:after { transform: scaleX(1); }
+
+.nav-bar .active
+{
+    color:#000;
+}
+
+.services
+{
+    width:100%;
+    background-color:#fff;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.services h1
+{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    display: inline-block;
+    margin: 0px -2px;
+    vertical-align: top;
+    padding-left:35%;
+    padding-right:35%;
+}
+
+.services-container
+{
+    width:100%;
+    display: inline-block;
+}
+
+.services-container .row1
+{
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width:33.33%;
+}
+
+.services-container .row1 h2
+{
+    text-transform:uppercase;
+    padding-top:25px;
+    text-align: center;
+    font-size:16px;
+    font-family:'montserrat';
+    color:#000;
+}
+ 
+.services-container .row1 p
+{
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30px;
+    padding-top:10px;
+    
+}
+
+.services-container .row2
+{
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width:33.33%;
+}
+
+.services-container .row2 h2
+{
+    text-transform:uppercase;
+    padding-top:25px;
+    text-align: center;
+    font-size:16px;
+    font-family:'montserrat';
+}
+
+.services-container .row2 p
+{
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30px;
+    padding-top:10px;
+    
+}
+
+.services-container .row3
+{
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width:31.33%;
+}
+
+.services-container .row3 h2
+{
+    text-transform:uppercase;
+    padding-top:25px;
+    text-align: center;
+    font-size:16px;
+    font-family:'montserrat';
+}
+
+.services-container .row3 p
+{
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30px;
+    padding-top:10px;
+    
+}
+
+.service
+{
+    width:100%;
+    background-color:#eee;
+    padding-top:30px;
+    padding-bottom:50px;
+}
+
+.service h1
+{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    display: inline-block;
+    margin: 0px -2px;
+    vertical-align: top;
+    padding-left:42%;
+    padding-right:42%;
+}
+
+ 
+
+.service-container
+{
+    width:100%;
+    display: inline-block;
+}
+
+.service-container .row1
+{
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width:33.33%;
+    
+}
+
+.service-container .row1 h2
+{
+    text-transform:uppercase;
+    padding-top:25px;
+    text-align: center;
+    font-size:16px;
+    font-family:'montserrat';
+}
+
+.service-container .row1 p
+{
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30px;
+    padding-top:10px;
+    
+}
+
+.service-container .row2
+{
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width:33.33%;
+}
+
+.service-container .row2 h2
+{
+    text-transform:uppercase;
+    padding-top:25px;
+    text-align: center;
+    font-size:16px;
+    font-family:'montserrat';
+}
+
+.service-container .row2 p
+{
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30px;
+    padding-top:10px;
+    
+}
+
+.service-container .row3
+{
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width:31.33%;
+}
+
+.service-container .row3 h2
+{
+    text-transform:uppercase;
+    padding-top:25px;
+    text-align: center;
+    font-size:16px;
+    font-family:'montserrat';
+}
+
+.service-container .row3 p
+{
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30px;
+    padding-top:10px;
+    
+}
+
+
+
+.testimonial{
+	position: relative;
+	background-color:#000;
+	background-size: cover;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.testimonial-container{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.slick-slide,.slick-track,.slick-list{
+	outline: none !important;
+}
+.testimonial-single{
+	opacity: 1
+}
+.testimonial-single.slick-center{
+	opacity: 1;
+}
+.avatar{
+	padding-bottom: 40px;
+}
+.avatar img{
+	margin: 0 auto;
+    width:100%;
+}
+
+.slick-dots{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	padding-top:5px;
+    text-align: center;
+}
+.slick-dots li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.slick-dots li:last-child{
+	margin-right: 0;
+}
+.slick-dots li button{
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	background: transparent;
+	color: transparent;
+	text-indent: -99999px;
+	cursor: pointer;
+	outline: none !important;
+}
+.slick-dots li.slick-active button{
+	background: #fff;
+}
+
+.form
+{
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+}
+
+.form-title
+{
+    width:100%;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.form-title h2
+{
+    text-align: center;
+}
+
+.form .row
+{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.btn btn-primary
+{
+    margin-left:30px;
+    margin-right:30px;
+    
+}
+
+footer{
+	background: #000;
+	padding-top: 110px;
+	padding-bottom: 140px;
+}
+footer h2{
+	margin: 0;
+	color: #fff;
+	font-size: 48px;
+	font-weight: normal;
+}
+
+::-webkit-input-placeholder { 
+  color: #000;
+}
+
+:-ms-input-placeholder { 
+  color: #000;
+}
+
+::placeholder {
+  color: #000;
+}
+.input-group{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.input-group-append .btn-primary{
+	padding: 25px 28px 24px;
+	border-radius: 0px 3px 3px 0px;
+	border-left: 1px solid #b59877;
+	background: #b59877;
+	font-size: 16px;
+}
+
+.input-group-append .btn-primary {
+    background: #c7b199;
+    color: #fff;
+    padding: 20px 32px 19px;
+    text-align: center;
+}
+
+.input-group-append .btn {
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.input-group-append .btn-primary:hover,.input-group-append .btn-primary:focus{
+	background: #fff;
+}
+.list-inline {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.list-inline li{
+	display: inline-block;
+}
+footer ul.list-inline{
+	max-width: 690px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+footer li a,footer li{
+	color: #fff;
+	font-size: 14px;
+}
+footer li a:hover,footer li a:focus{
+	opacity: 0.8;
+}
+footer li{
+	border-right: 1px solid #fff;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+footer li:first-child {
+	padding-left: 0px;
+
+}
+footer li:last-child{
+	padding-right: 0;
+	border-right: none;
+}
+.fadeinbottom {
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+
+@media only screen and (max-width: 1400px)
+{
+    .services h1
+    {
+        font-size:25px;
+    }
+    
+    .service h1
+    {
+        font-size:25px;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .head-container
+    {
+        padding-left:20px;
+    }
+    
+    .nav-bar ul
+    {
+        width:100%;
+        margin-left:20px;
+    }
+    
+    .nav-bar ul li
+    {
+        padding-left: 5px;
+        padding-right: 30px;
+    }
+    
+    .services h1
+    {
+        font-size:20px;
+    }
+    
+    .service h1
+    {
+        font-size:20px;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    .nav-bar ul
+    {
+        width: 100%;
+        
+    }
+    
+    .nav-bar ul li
+    {
+        padding-right: 24px;
+    }
+    
+    .testimonial
+    {
+        position: relative;
+        background-color: #000;
+        background-size: contain;
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+        width:100%;
+    }
+    .services h1
+    {
+        font-size: 35px;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    
+    .service h1
+    {
+        font-size: 35px;
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    
+    .service-container .row1 h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat';
+    }
+    .service-container .row2 h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat';
+    }
+    .service-container .row3 h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat';
+    }
+    
+    .service-container .row1 p
+    {
+        font-size: 30px;
+        font-family: 'Nunito';
+        padding-left: 15%;
+        padding-right: 15%;
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    .service-container .row2 p
+    {
+        font-size: 30px;
+        font-family: 'Nunito';
+        padding-left: 15%;
+        padding-right: 15%;
+        line-height: 45px;
+        padding-top:10px;
+
+    }
+    .service-container .row3 p
+    {
+        font-size: 30px;
+        font-family: 'Nunito';
+        padding-left: 15%;
+        padding-right: 15%;
+        line-height: 40px;
+        padding-top: 10px;
+
+    }
+    
+    .services-container .row1 h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat';
+    }
+    .services-container .row2 h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat';
+    }
+    .services-container .row3 h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'montserrat';
+    }
+    
+    .services-container .row1 p
+    {
+        font-size: 30px;
+        font-family: 'Nunito';
+        padding-left: 15%;
+        padding-right: 15%;
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    .services-container .row2 p
+    {
+        font-size: 30px;
+        font-family: 'Nunito';
+        padding-left: 15%;
+        padding-right: 15%;
+        line-height: 45px;
+        padding-top:10px;
+
+    }
+    .services-container .row3 p
+    {
+        font-size: 30px;
+        font-family: 'Nunito';
+        padding-left: 15%;
+        padding-right: 15%;
+        line-height: 40px;
+        padding-top: 10px;
+
+    }
+    
+    footer ul.list-inline{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	footer li a, footer li{
+		font-size: 12px;
+	}
+    
+}
+
+@media only screen and (max-width: 768px)
+{
+    
+    .head-container
+    {
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    
+    .services h1
+    {
+        font-size:35px;
+    }
+    
+    .service h1
+    {
+        font-size:35px;
+    }
+    
+    .logo {
+        padding-left: 20px;
+        padding-top: 30px;
+        width: 20%;
+        margin: 0 -2px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    
+    .nav-list {
+            
+        width:80%;    
+            
+    }
+    
+    .nav-bar ul
+    {
+        width:100%;
+    }
+    
+    
+    
+    .nav-bar ul li
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size:11px;
+    }
+    
+    .testimonial
+    {
+        position: relative;
+        background-color: #000;
+        background-size: contain;
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+        width:100%;
+    }
+    .services h1
+    {
+        font-size: 35px;
+        padding-left: 22%;
+        padding-right: 12%;
+    }
+    
+    .service h1
+    {
+        font-size: 35px;
+        padding-left: 30%;
+        padding-right: 38%;
+    }
+    
+    .service-container .row1 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .service-container .row2 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .service-container .row3 h2 {
+        text-transform: uppercase;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'montserrat';
+    }
+    
+    .service-container .row1 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    .service-container .row2 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top:10px;
+
+    }
+    .service-container .row3 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    
+    .services-container .row1 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .services-container .row2 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .services-container .row3 h2 {
+        text-transform: uppercase;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'montserrat';
+    }
+    
+    .services-container .row1 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    .services-container .row2 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top:10px;
+
+    }
+    .services-container .row3 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    
+    footer ul.list-inline{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	footer li a, footer li{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width:450px)
+{
+    .head-container
+    {
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    
+   
+    
+    .logo {
+        padding-left: 20px;
+        padding-top: 30px;
+        width: 15%;
+        margin: 0 -2px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    
+    .nav-list {
+            
+        width:85%;    
+            
+    }
+    
+    .nav-bar ul
+    {
+        width:100%;
+    }
+    
+    
+    
+    .nav-bar ul li
+    {
+        padding-left: 3px;
+        padding-right: 10px;
+        font-size:7px;
+    }
+    
+    .testimonial
+    {
+        position: relative;
+        background-color: #000;
+        background-size: contain;
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+        width:100%;
+    }
+    .services h1
+    {
+        font-size: 27px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .service h1
+    {
+        font-size: 49px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .services-container .row1 {
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+    
+    .services-container .row2 {
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+    
+    .services-container .row3 {
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+   
+    
+    .services-container .row1 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .services-container .row2 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .services-container .row3 h2 {
+        text-transform: uppercase;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'montserrat';
+    }
+    
+    .services-container .row1 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    .services-container .row2 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top:10px;
+
+    }
+    .services-container .row3 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    
+    .service-container .row1 {
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+    
+    .service-container .row2 {
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+    
+    .service-container .row3 {
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+   
+    
+    .service-container .row1 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .service-container .row2 h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'montserrat';
+    }
+    .service-container .row3 h2 {
+        text-transform: uppercase;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'montserrat';
+    }
+    
+    .service-container .row1 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    .service-container .row2 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top:10px;
+
+    }
+    .service-container .row3 p
+    {
+        font-size: 15px;
+        font-family: 'Nunito';
+        line-height: 30px;
+        padding-top: 10px;
+
+    }
+    
+    footer ul.list-inline{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	footer li a, footer li{
+		font-size: 13px;
+	}
+}
+
+
+
+
+

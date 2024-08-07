@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Tree</title>
+    <meta name="viewport" user-scalable="no" content="width=device-width,initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid px-0">
+        <div class="row mx-0">
+            <div class="col-lg px-0">
+                <div style="width:100%; height:100%;" id="tree"/>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 my-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pb-4">Update Family Members</h2>
+                <form id="form-submit" class="needs-validation" action="javascript:;">
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="dob">Date of Birth*</label>
+                            <input type="date" class="form-control" id="dob" name="dob" placeholder="Type here" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="aniv">Anniversary</label>
+                            <input type="date" class="form-control" id="aniv" name="aniv" placeholder="Type here" value="">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="place">place of residence* </label>
+                            <input type="text" class="form-control" id="place" name="place" placeholder="Type here" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="email">Email ID* </label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Type here" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="phone">Phone* </label>
+                            <input type="number" minlength="5" maxlength="10" class="form-control" id="phone" name="phone" placeholder="Type here" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="passed">date of passing away </label>
+                            <input type="telephone" class="form-control" id="passed" name="passed" placeholder="Type here">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="form-button" type="submit">Submit Details</button>
+                </form>
+            </div>
+        </div>
+        <div class="row form-result pt-5">
+            <div class="col-12">
+                <h4>Submission Result</h4>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Scripts [Start] -->
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://wonderful-lamarr-2c2114.netlify.app/OrgChart.js"></script>
+<script type="text/javascript">
+OrgChart.templates.ana.field_0 = '<text class="field_0"  style="font-size: 20px;" fill="#ffffff" x="125" y="50" text-anchor="middle">{val}</text>';
+
+var chart = new OrgChart(document.getElementById("tree"), {
+ 						showYScroll: OrgChart.scroll.visible, 
+                        mouseScrool: OrgChart.action.yScroll,
+    template: "ana",
+    enableSearch: false,
+    nodeBinding: {
+        field_0: "name",
+        field_1: "DOB",
+        field_2: "phone",
+        field_3: "email"
+    }, 
+    nodeMenu: {
+        details: { text: "Details" },
+        edit: { text: "Edit" },
+        add: { text: "Add" },
+        remove: { text: "Remove" }
+    },
+    nodes: [
+        { id: "1", name: "Subramanyam 1868-1941/SeethaMahalakshmi", phone: "23213"},
+        { id: "2", pid: "1", name: "NagaPrasad/Chandrakala",},
+        { id: "3", pid: "1", name: "Srinivasa Murthy/Satya Vani",},
+        { id: "4", pid: "2", name: "Sarath",},
+        { id: "5", pid: "2", name: "Deepika", },
+        { id: "6", pid: "2", name: "Dr Abraham paul/Roise Paul",},
+        { id: "7", pid: "2", name: "HG Bishop Paulose",},
+        { id: "8", pid: "3", name: "Srikanth/Aruna",},
+        { id: "9", pid: "3", name: "sasank/Karthika",},
+        { id: "10", pid: "3", name: "Harsha/Vaishnavi",},
+        { id: "11", pid: "6", name: "Dilip/Lilee",},
+        { id: "12", pid: "6", name: "Subhash/Marykutty",},
+        { id: "13", pid: "11", name: "Teena/Arun",},
+        { id: "14", pid: "11", name: "Neeta",},
+        { id: "15", pid: "13", name: "Nosh",},
+        { id: "16", pid: "12", name: "Praveen/Neetu",},
+        { id: "17", pid: "16", name: "Jeevan",},
+        { id: "18", pid: "8", name: "Santhosh/Neelam",},
+        { id: "19", pid: "8", name: "Meena/Becoy",},
+        { id: "20", pid: "8", name: "Santhosh/Joann",},
+        { id: "21", pid: "9", name: "Merly/Mathulia",},
+        { id: "22", pid: "9", name: "Pradeep/Manju",},
+        { id: "23", pid: "10", name: "Shikka/Abraham",},
+        { id: "24", pid: "10", name: "Suresh/Sherly",},
+        { id: "25", pid: "10", name: "Meera/Kesian",},
+        { id: "26", pid: "19", name: "Emily",},
+        { id: "27", pid: "19", name: "Rachel",},
+        { id: "28", pid: "21", name: "Nitin/Meghana",},
+        { id: "29", pid: "21", name: "Karun",},
+        { id: "30", pid: "25", name: "Athishay",},
+        { id: "31", pid: "24", name: "kiran",},
+        { id: "32", pid: "24", name: "Roshan",},
+        
+    ]
+});  
+
+// form related Stuff
+$(document).ready(function(){
+    // set date limit
+    $("input[type='date'").prop('max', function(){
+        return new Date().toJSON().split('T')[0];
+    });
+
+    $("#form-submit").on("submit",function(e){
+        e.preventDefault()
+        var result = {} // submission object
+        $(this).find("input").each(function(){
+            result[$(this).attr("name")] = $(this).val();
+            $(this).val('');
+        })
+        var printTemplate = `
+            <div class="col-md-4 py-3">
+                <ul class="pl-3 mb-0">
+                    <li>Date of Birth: <strong>${result.dob}</strong></li>
+                    <li>Anniversary: <strong>${result.dob}</strong></li>
+                    <li>Date of Passed Away: <strong>${result.passed}</strong></li>
+                    <li>Place: <strong>${result.place}</strong></li>
+                    <li>Email ID: <strong>${result.email}</strong></li>
+                    <li>Phone: <strong>${result.phone}</strong></li>
+                </ul>
+            </div>
+        `;
+        $(".form-result").append(printTemplate)
+    })
+
+})
+
+
+</script>
+<!-- Scripts [End] -->
+</body>
+</html>
